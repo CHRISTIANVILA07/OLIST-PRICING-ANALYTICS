@@ -139,10 +139,6 @@ GO
    dim_product.product_category_name
    -> dim_category.category_name_pt
 
-   Nota:
-   Esta FK asume que:
-   - dbo.dim_product tiene la columna product_category_name
-   - dbo.dim_category usa category_name_pt como identificador
 -------------------------------- */
 ALTER TABLE dbo.dim_product
 ADD CONSTRAINT FK_dim_product_dim_category
